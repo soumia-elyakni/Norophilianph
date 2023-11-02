@@ -1,42 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr"> <!-- Langue par défaut : français -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="script.js"></script>
-</body>
     <link rel="stylesheet" href="style.css">
     <title>Norophilia</title>
 </head>
 <body id="body">
     <div class="card">
         <div class="logoBx">
-            <img src="logo/LogoNph.png">
+            <img src="logo/LogoNph.png" alt="Logo de Norophilia">
         </div>
         <div class="content">
             <div class="details">
-                <h2>Un cadeau c'est une expression d'amour</h2>
-                
-                    <text>
-                        Norophilia vous aide à préparer un Gift pour vos convives, inviter vos amis lors d'un événement. Etc
-                    </text>
-            <div class="data">
-                <div class="data1">
-                    <a class="RS" href="https://www.facebook.com/norophilia.nph" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a class="RS" href="https://www.instagram.com/norophilia.nph" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a class="RS" href="https://www.tiktok.com/@norophilia.nph?_t=8gzyhHtQsKL&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
-                    <a class="RS" href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <h2 id="greeting" lang="fr">Un cadeau c'est une expression d'amour</h2>
+                <h2 id="greeting" lang="en" style="display:none;">A gift is an expression of love</h2>
+                <!-- Vous pouvez ajouter des versions dans d'autres langues ici -->
+
+                <text id="description" lang="fr">
+                    Norophilia vous aide à préparer un Gift pour vos convives, inviter vos amis lors d'un événement. Etc
+                </text>
+                <text id="description" lang="en" style="display:none;">
+                    Norophilia helps you prepare a gift for your guests, invite your friends to an event, etc.
+                </text>
+                <!-- Ajoutez du texte dans d'autres langues ici -->
+
+                <div class="data">
+                    <div class="data1">
+                        <a class="RS" href="https://www.facebook.com/norophilia.nph" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a class="RS" href="https://www.instagram.com/norophilia.nph" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="RS" href="https://www.tiktok.com/@norophilia.nph?_t=8gzyhHtQsKL&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a class="RS" href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                    <div class="data2">
+                        <a class="RS" href="https://wa.me/+212631802908" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a class="RS" href="mailto:norophilia.nph@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <div class="data2">
-                    <a class="RS" href="https://wa.me/+212631802908" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a class="RS" href="mailto:norophilia.nph@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <!-- Bouton pour changer de langue -->
+    <button onclick="changeLanguage('fr')">Français</button>
+    <button onclick="changeLanguage('en')">English</button>
+
+    <script>
+        // Fonction pour changer la langue
+        function changeLanguage(lang) {
+            const elementsFr = document.querySelectorAll('[lang="fr"]');
+            const elementsEn = document.querySelectorAll('[lang="en"]');
+
+            if (lang === 'fr') {
+                elementsFr.forEach(el => el.style.display = 'block');
+                elementsEn.forEach(el => el.style.display = 'none');
+            } else if (lang === 'en') {
+                elementsFr.forEach(el => el.style.display = 'none');
+                elementsEn.forEach(el => el.style.display = 'block');
+            }
+        }
+    </script>
 </body>
 </html>
