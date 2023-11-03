@@ -54,3 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("description").textContent = "Veuillez vérifier le fichier 'lang.json'.";
       });
   });
+  
+
+
+  
+  
