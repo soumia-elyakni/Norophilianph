@@ -145,3 +145,15 @@ body {
     line-height: 1.2em;
     font-weight: 600;
 }
+
+#languageSelect {
+    position: fixed;
+    top: 10px; /* Ajustez la valeur en fonction de la distance par rapport au haut de la page */
+    right: 10px; /* Ajustez la valeur en fonction de la distance par rapport à la droite de la page */
+    z-index: 999; /* Assurez-vous que le select apparaît au-dessus du contenu */
+    background: transparent; /* Fond transparent pour le select */
+    border: none; /* Supprimez la bordure par défaut */
+    color: #555; /* Couleur du texte */
+    font-size: 16px; /* Taille du texte */
+    cursor: pointer; /* Curseur de type pointeur */
+  }

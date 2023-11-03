@@ -18,3 +18,39 @@ document.addEventListener("DOMContentLoaded", function() {
     // Appliquer l'image de fond aléatoire au corps (body)
     document.body.style.backgroundImage = backgroundImages[randomIndex];
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Chargement des traductions depuis le fichier JSON
+    fetch("lang.json")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Le chargement des traductions a échoué");
+        }
+        return response.json();
+      })
+      .then(translations => {
+        // Récupérez la boîte de sélection de langue
+        const languageSelect = document.getElementById("languageSelect");
+  
+        // Écoutez les changements de sélection de langue
+        languageSelect.addEventListener("change", function () {
+          const selectedLang = languageSelect.value;
+          updatePageLanguage(translations, selectedLang);
+        });
+  
+        // Fonction pour mettre à jour la langue de la page
+        function updatePageLanguage(translations, selectedLang) {
+          document.getElementById("greeting").textContent = translations[selectedLang]["greeting"];
+          document.getElementById("description").textContent = translations[selectedLang]["description"];
+        }
+  
+        // Sélectionnez la langue par défaut en fonction de la boîte de sélection
+        const userLang = languageSelect.value;
+        updatePageLanguage(translations, userLang);
+      })
+      .catch(error => {
+        console.error("Erreur lors du chargement des traductions : " + error);
+        document.getElementById("greeting").textContent = "Erreur lors du chargement des traductions.";
+        document.getElementById("description").textContent = "Veuillez vérifier le fichier 'lang.json'.";
+      });
+  });
