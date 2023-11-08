@@ -1,23 +1,23 @@
 {
     "fr": {
       "greeting": "Un cadeau c'est une expression d'amour",
-      "description": "Norophilia vous aide à préparer un Gift pour vos convives, inviter vos amis lors d'un événement, etc."
+      "description": "Norophilia simplifie la préparation de cadeaux et d'événements, offrant des conseils, personnalisation, des packs artisanaux et des produits uniques tels que des jeux de cartes, agendas etc."
     },
     "en": {
       "greeting": "A gift is an expression of love",
-      "description": "Norophilia helps you prepare a gift for your loved ones, invite your friends to an event, etc."
+      "description": "Norophilia simplifies gift and event preparation, offering advice, customization, handmade packages, and unique products such as card games, calendars, etc."
     },
     "tr": {
       "greeting": "Hediye bir aşk ifadesidir",
-      "description": "Norophilia Sevdikleriniz için bir hediye hazırlamanıza, arkadaşlarınızı bir etkinliğe davet etmenize yardımcı olur, vb."
+      "description": "Norophilia, hediyeleri ve etkinlikleri hazırlamayı kolaylaştırarak, öneriler sunmanın yanı sıra özelleştirme seçenekleri, el yapımı paketler ve kart oyunları, takvimler gibi benzersiz ürünler sunar."
     },
     "es": {
       "greeting": "Un regalo es una expresión de amor",
-      "description": "Norophilia te ayuda a preparar un regalo para Tus seres queridos, invitar a tus amigos a un evento, etc."
+      "description": "Norophilia simplifica la preparación de regalos y eventos, ofreciendo consejos, personalización, paquetes artesanales y productos únicos como juegos de cartas, agendas, etc."
     },
     "ar": {
       "greeting": "الهدية هي تعبير عن الحب",
-      "description": "نوروفيليا تساعدك في تحضير هدية لأحبائك وأصدقائك، ودعوة أصدقائك لحدث ما، وما إلى ذلك."
+      "description": ".نوروفيليا تبسط تحضير الهدايا والفعاليات، وتقدم نصائح، وتخصيص، وحزم يدوية، ومنتجات فريدة مثل ألعاب الورق، والأجندات، وما إلى ذلك"
     }
   }
   
